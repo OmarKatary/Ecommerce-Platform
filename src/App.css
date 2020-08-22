@@ -7,6 +7,9 @@ body{
   height: 100vh;
   margin: 0;
 }
+#root{
+  height: 100%;
+}
 .grid-container{
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -53,4 +56,27 @@ body{
 .product-image{
   max-width: 34rem;
   max-height: 34rem;
+}
+
+/* Product Details */
+.details{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.details-image{
+  flex: 2 2 40rem;
+}
+.details-image img{
+  max-width: 60rem;
+}
+.details-info{
+  flex: 1 1 30rem;
+}
+.details-buy{
+  flex: 1 1 30rem;
+  border: 0.1rem #808080 solid;
+  border-radius: 0.5rem;
+  background-color: #fefefe;
+  height: fit-content;
 }
