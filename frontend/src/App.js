@@ -10,7 +10,7 @@ function App() {
             <div className="grid-container">
                 <header className="header">
                     <div className="brand">
-                        <Link href="index.html" to="/" >Eccomerce-Brand</Link>
+                        <Link to="/" >Eccomerce-Brand</Link>
                     </div>
                     <div className="header-buttons">
                         <a href="cart.html">Cart</a>

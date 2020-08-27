@@ -6,13 +6,18 @@ import { listProducts } from '../actions/productsActions';
 
 
 function HomePage(props){
-    // const [products, setProducts] = useState([]);
+    // const [products, setProducts] = useState(() => []);
+    //get state from reducer in combineReducer named productsList
     const productsList = useSelector(state => state.productsList)
     const { products, loading, error } = productsList;
     const dispatch = useDispatch();
 
+    //Runs call back whenever data in second parameter is changed
+    // [] means on Mount
     useEffect(() =>{
         dispatch(listProducts())
+        //whatever is in the return runs as clean up before running the effect's call back
+        //when the component unmounts
         return () =>{
         }
     }, [])
