@@ -14,8 +14,8 @@ function ProductPage(props){
     },[])
 
     const handlerAddToCart = () =>{
-        console.log("props.history", props.history) 
-        props.history.push("/cart/" + props.match.params.id + "?qty" + quantity)
+        // console.log("props.history", props.history) 
+        props.history.push("/cart/" + props.match.params.id + "?qty=" + quantity)
     }
     return(
         loading? <div>Loading...</div>:
